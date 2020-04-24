@@ -1,5 +1,50 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+DESCRIPTION:
+
+# Employee_Assignment
+Basic design and working for maintaining Employee records . Front End: React.js, IDE: VScode, RestfulWEBservice: Node.js with ExpressJS &amp; AWS DynamoDB
+
+Front End:
+
+Visual Studio Code installation (OS based latest version)
+
+In command prompt run following command: 
+nvm install
+yarn install
+
+Create folder 
+Eg: cd Application
+
+npx create-react-app "my-app"
+
+To run:
+
+Command prompt -> cd "folder name" -> npm start
+
+Express JS:
+
+Command prompt -> npm install --save express
+
+To run from 
+
+express js-> node index.js
+
+Axios: 
+
+Command prompt -> npm install --save axios
+
+To run the whole application:
+
+In Browser go to http://localhost:3002/
+
+Backend:
+
+AWS Dynamo DB
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
