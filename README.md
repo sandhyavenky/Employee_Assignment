@@ -53,7 +53,7 @@ $ npx create-react-app myapplication
 
 $ cd myapplication
 
-$ npm start (this will start the created react application and VS coe will open where we start playing with our creativity)
+$ npm start (this will start the created react application and VS code will open where we start playing with our creativity)
 
 ###### To run this project, install it locally using npm or using yarn
 
