@@ -21,32 +21,31 @@ class Create extends React.Component{
         dob: '',
         gender: ''
       }  , employeeStatus: "" ,
-      errormessage: '',  
+      errormessage: ''
     };
   }
-  
-createEmployee(event){
-  const name = event.target.name;
-  const value = event.target.value;
-  let err = ''; 
-  var employee = Object.assign(this.state.emp, {[event.target.name]:  event.target.value} ) 
-  if ((name === "empid"),(name === "dob") ){
-    if(value != "" && !Number(value)) {
-      err = <strong> Please enter numeric values for Employee ID and Data of Birth</strong>;
+  createEmployee(event){
+    const name = event.target.name;
+    const value = event.target.value;
+    let err = ''; 
+    var employee = Object.assign(this.state.emp, {[event.target.name]:  event.target.value} ) 
+    if ((name === "empid"),(name === "dob") ){
+      if(value != "" && !Number(value)) {
+        err = <strong> Please enter numeric values for Employee ID and Data of Birth</strong>;
+      }
     }
+    this.setState({errormessage: err});
+    this.setState({
+      emp: employee           
+    }); 
   }
-  this.setState({errormessage: err});
-  this.setState({
-    emp: employee           
-  }); 
-}
 submitDetails(){
   axios.post("http://localhost:3001/", this.state.emp)  
     .then(res => {
       this.setState({
         employeeStatus: res.data.status 
       })
-    })
+    }) 
 }
 clearDetails = (e) => {   
   this.state.emp.empid=""

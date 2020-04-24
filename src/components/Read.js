@@ -36,6 +36,7 @@ displayEmployee(){
       console.log(error)
     });
 }
+
 render(){
   return(
     <div>
@@ -57,37 +58,37 @@ render(){
       <Form.Group> <Row> Read Existing Employee  </Row>
       </Form.Group>
       <hr></hr>
-      <Form.Group><Row>
+      <Form.Group><Form.Row>
         <Col xs={2}>Employee ID</Col>
         <Col xs={3}> <Form.Control type="text"  onChange={this.readEmployeeId} value={this.state.empid} /></Col>
-      </Row></Form.Group>
-      <Form.Group>
+      </Form.Row></Form.Group>
+      <Form.Group><Form.Row>
         <Col xs={1}><Button variant="primary" size="sm" disabled={!this.state.empid} onClick={this.displayEmployee}> Read </Button></Col>
-      </Form.Group>
+        </Form.Row></Form.Group>
       <hr></hr>
-      <Form.Group><Row>
+      <Form.Group><Form.Row>
         <Col xs={2}>First Name</Col>
         <Col xs={3}> <Form.Control type="text" readOnly value={this.state.emp.fname}/></Col>
-      </Row></Form.Group>
-      <Form.Group><Row>
+      </Form.Row></Form.Group>
+      <Form.Group><Form.Row>
         <Col xs={2}>Sur Name</Col>
         <Col xs={3}> <Form.Control type="text" readOnly value={this.state.emp.sname} /></Col>
-      </Row></Form.Group>
-      <Form.Group><Row>
+      </Form.Row></Form.Group>
+      <Form.Group><Form.Row>
         <Col xs={2}>Email</Col>
         <Col xs={3}> <Form.Control type="text" readOnly value={this.state.emp.email} /></Col>
-        </Row></Form.Group>
+        </Form.Row></Form.Group>
       </Form>
       <Form>
-      <Form.Group><Row>
+      <Form.Group><Form.Row>
         <Col xs={2}>DOB</Col>
         <Col xs={3}> <Form.Control type="text"  readOnly value={this.state.emp.dob}/></Col>
-        </Row></Form.Group>
-        <Form.Group><Row>
+        </Form.Row></Form.Group>
+        <Form.Group><Form.Row>
           <Col xs={2}> Gender </Col>
           <Col xs={1}><Form.Check type="radio" name="gender" value="Male" readOnly checked={this.state.emp.gender === "Male"}  label="Male" ></Form.Check></Col>
           <Col xs={1}><Form.Check type="radio" name="gender" value="Female"  readOnly checked={this.state.emp.gender === "Female"} label="Female"></Form.Check></Col>
-        </Row></Form.Group>
+        </Form.Row></Form.Group>
         </Form>
         </Col>
       {/* </Container> */}
