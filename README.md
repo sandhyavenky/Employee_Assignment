@@ -1,3 +1,10 @@
+# Welcome to GitHub Desktop!
+
+This is your README. READMEs are where you can communicate what your project is and how to use it.
+
+Write your name on line 6, save it, and then head back to GitHub Desktop.
+Sandhya
+
 # Employee - CRUD Operations
 
 Simple Employee Record maintaining details with React.js,Node.js with ExpressJS and AWS Dynamo DB with IDE being VScode
@@ -8,6 +15,7 @@ Simple Employee Record maintaining details with React.js,Node.js with ExpressJS 
 2 Technologies
 3 Setup
 4 Launch
+5 Description
 
 
 ## Synopsis
@@ -33,6 +41,7 @@ Install VS code
 $ nvm installation
 $ nvm run node --version
 version -> v13.1.0 (npm v6.14.4)
+$ nvm yarn
 
 ###### Run commands for the backend service rendereing by ExpressJS
 
@@ -46,92 +55,23 @@ $ npm install --save axios
 
 ## Launch
 ###### To create react app, run following commands in terminal
-###### To run this project, install it locally using npm
 
 $ npx create-react-app myapplication
 $ cd myapplication
 $ npm start (this will start the created react application and VS coe will open where we start playing with our creativity)
 
+###### To run this project, install it locally using npm or using yarn
 
+$ yarn start
 
+###### To run the application in Express JS
 
+$ node index.js
 
+## Description
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Employee_Assignment
-Basic design and working for maintaining Employee records . Front End: React.js, IDE: VScode, RestfulWEBservice: Node.js with ExpressJS &amp; AWS DynamoDB
-
-Front End:
-
-Visual Studio Code installation (OS based latest version)
-
-In command prompt run following command:
-nvm install
-yarn install
-
-Create folder
-Eg: cd Application
-
-npx create-react-app "my-app"
-
-To run:
-
-Command prompt -> cd "folder name" -> npm start
-
-Express JS:
-
-Command prompt -> npm install --save express
-
-To run from
-
-express js-> node index.js
-
-Axios:
-
-Command prompt -> npm install --save axios
-
-To run the whole application:
-
-In Browser go to http://localhost:3002/
-
-Backend:
-
-AWS Dynamo DB
-
-
-git commit -am "first commit"
+* Connect the Dynamo DB to the Express JS by mentioning the connection keys and URL
+* In VS code of Express application, create a table "CreateEmployee" in AWS Dynamo Db
+* Create main index.js in Express application and use the http methods to perform CRUD operations from React frontend to store and make changes in AWS
+* Design the front end in React.js in the IDE VScode
+* Use API calls which connects to the Express which is inturn connected to AWS Dynamo DB
