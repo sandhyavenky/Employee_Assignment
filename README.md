@@ -22,12 +22,15 @@ Employee-Crud operation is a small basic application which revolves around the 4
 ## Technologies
 ###### Project is created with
 
-* React Bootstrap
-* React DOM
 * Axios
 * ExpressJS
 * AWS DynamoDB
 * Visual Studio Code
+
+###### Libraries used
+
+* React Bootstrap
+* React DOM
 
 ## Set up
 
