@@ -36,14 +36,19 @@ Install VS code
 ###### Run commands in terminal
 
 $ nvm installation
+
 $ nvm run node --version
+
 version -> v13.1.0 (npm v6.14.4)
+
 $ nvm yarn
 
 ###### Run commands for the backend service rendereing by ExpressJS
 
 $ cd myapplication
+
 $ npm init
+
 $ npm install --save express
 
 ###### Run command to install the Axios connecting Express and React application
