@@ -55,6 +55,10 @@ $ npm install --save express
 
 $ npm install --save axios
 
+###### Run command to install the React-bootstrap 
+
+$ npm install 'react-bootstrap'
+
 ## Launch
 ###### To create react app, run following commands in terminal
 
