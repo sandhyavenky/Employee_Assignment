@@ -5,9 +5,13 @@ Simple Employee Record maintaining details with React.js,Node.js with ExpressJS 
 ## Table of Contents
 
 1 Synopsis
+
 2 Technologies
+
 3 Setup
+
 4 Launch
+
 5 Description
 
 
