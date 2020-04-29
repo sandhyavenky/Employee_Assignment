@@ -39,13 +39,13 @@ Install VS code
 
 ###### Run commands in terminal
 
-$ nvm installation
+$ npm install
 
-$ nvm run node --version
+$ npm run node --version
 
 version -> v13.1.0 (npm v6.14.4)
 
-$ nvm yarn
+$ npm yarn
 
 ###### Run commands for the backend service rendereing by ExpressJS
 
