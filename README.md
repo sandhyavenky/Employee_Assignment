@@ -22,16 +22,16 @@ Employee-Crud operation is a small basic application which revolves around the 4
 ## Technologies
 ###### Project is created with
 
-* Axios
 * ExpressJS
 * AWS DynamoDB
 * Visual Studio Code
 
-###### Libraries used
+###### Libraries/Dependencies
 
 * React Bootstrap
 * React DOM
 * React Router DOM
+* Axios
 
 ## Set up
 
@@ -53,15 +53,16 @@ $ cd myapplication
 
 $ npm init
 
-$ npm install --save express
-
-###### Run command to install the Axios connecting Express and React application
+###### Run command to add Axios Dependency to connect Express and React application
 
 $ npm install --save axios
 
-###### Run command to install the React-bootstrap 
+###### Run command to add libraries 
 
 $ npm install 'react-bootstrap'
+
+$ npm install 'react-router-dom'
+
 
 ## Launch
 ###### To create react app, run following commands in terminal
@@ -76,9 +77,6 @@ $ npm start (this will start the created react application and VS code will open
 
 $ yarn start
 
-###### To run the application in Express JS
-
-$ node index.js
 
 ## Description
 
